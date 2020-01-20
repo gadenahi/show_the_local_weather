@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-family: "Roboto";
+}
+
+body #container h1 {
+  font-size: 60px;
+}
+
+body #output {
+  border: 1px solid orange;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body #output h2:nth-child(2) .last-letter {
+  color: blue;
+}
+
+body #footer p {
+  font-size: 14px;
+}
+
+body #footer p a {
+  text-decoration: none;
+  color: lightblue;
+}
+/*# sourceMappingURL=index.css.map */

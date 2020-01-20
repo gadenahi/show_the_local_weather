@@ -1,0 +1,22 @@
+body {
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+body #icons {
+  font-family: "Roboto";
+  text-align: center;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body #icons h1 {
+  color: white;
+}
+
+body #footer p {
+  font-size: 14px;
+  color: lightblue;
+}
+/*# sourceMappingURL=animate.css.map */

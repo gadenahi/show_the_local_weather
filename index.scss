@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+  background-color: rgba(0,0,0,0.9);
+  color: white;
+  font-family: "Roboto";
+  #container {
+  h1{
+    font-size: 60px;
+  }
+}
+#output {
+  border: 1px solid orange;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  h2:nth-child(2) .last-letter {
+    color: blue;
+  }
+}
+ #footer {
+  p {
+    font-size: 14px;
+    a {
+      text-decoration: none;
+      color: lightblue;
+    } 
+  }
+ }
+}
