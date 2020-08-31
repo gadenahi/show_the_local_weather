@@ -14,21 +14,27 @@ $(document).ready(function(){
         var lat = data.latitude
         var lng = data.longitude
         // alert( "Your location is \n[" + lat + "," + lng + "]\n" ) ;
-        var url = "https://fcc-weather-api.glitch.me/api/current?lat=" + lat + "&lon=" + lng;
-
+      // console.log(data)
+      var url = "https://fcc-weather-api.glitch.me/api/current?lat=" + lat + "&lon=" + lng;
       $.ajax({
         url: url,
         type: "GET",
         async: false,
         dataType: "jsonp",
-        success: function(data) {
-          // console.log(data)
+        success: function (data) {
+          console.log(data)
           var city = data.name
           var country = data.sys.country
           var icon = data.weather[0].icon
           var tmp = data.main.temp
           var wea = data.weather[0].main
-          $('#output').prepend("<h2>" + city + ", " + country +"</h2><h2>" + tmp + "<span class=last-letter> ℃</span></h2><h2>" + wea + "</h2><img src=" + icon + " alt=weather_icon height=80 width=80 />")
+          var alt_val = "alt=weather_icon height=80 width=80"
+          if (icon === undefined) {
+            img_val = ''
+          } else {
+            img_val = "</h2><img src=" + icon + alt_val + "/>"
+          }
+          $('#output').prepend("<h2>" + city + ", " + country +"</h2><h2>" + tmp + "<span class=last-letter> ℃</span></h2><h2>" + wea + img_val)
         },
         error: function(err){
           alert("err")
